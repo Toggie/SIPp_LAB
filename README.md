@@ -20,6 +20,7 @@ Add a docker group (or ensure one exists) and then add your regular user to the 
 groupadd docker
 usermod -aG docker your_username
 ~~~~
+(You might wish to log out and back in again for the changes to take effect)
 
 Now all that is left to do is to git clone this repository to both servers.
 ~~~~
