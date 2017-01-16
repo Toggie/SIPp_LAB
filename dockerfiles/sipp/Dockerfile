@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Ian Blenke <ian@blenke.com>
+MAINTAINER Jeff Johnston <jeffj8086@gmail.com>
 
 ENV SIPP_VERSION 3.4.1
 
