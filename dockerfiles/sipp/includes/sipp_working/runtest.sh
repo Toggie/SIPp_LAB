@@ -19,7 +19,8 @@ start_sipp() {
     echo "$(date): Launching SIPp Client scenario (uac_cello.xml)" && \
     sipp -bg -sf uac_cello.xml $SERVER_IP >/dev/null 2>&1
   else
-    exit 1
+    echo -e "$USAGE"
+    exit 2
   fi
 }
 
