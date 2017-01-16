@@ -46,3 +46,8 @@ docker run -t sipp ip_of_server-1 ip_of_server-2 client
 ~~~~
 
 This will launch a scenario on both sides for bidirectional media.  You can capture both with tcpdump to see the RTP stream and the average latency, jitter, and many other factors with wireshark.  You can even listen to the media being played in the RTP stream (which you can find in this repository as SIPp_LAB/dockerfiles/sipp/includes/sipp_working/cello.wav
+
+One such example of a tcpdump command you might run to capture everything would be
+~~~~
+sudo tcpdump -p -i eth0 -n -s 0 -C 25 -w /tmp/load_uas.pcap
+~~~~
